@@ -1,0 +1,74 @@
+/**
+  V1 版本 全局样式 
+*/
+
+$ratio: 1920 / 128; // 缩放比
+
+$main-color: #005abb; // 主色
+
+$sub-color: #103c5d; // 副色
+
+$font: Microsoft YaHei UI;
+
+// 返回对应屏幕下的rem值
+@function px2rem($px) {
+  @return $px / $ratio + rem;
+}
+
+.show {
+  visibility:visible;
+}
+
+.hide {
+  visibility:hidden;
+}
+
+
+
+/*
+
+ 以下代码拷贝到全局样式下使用
+
+@media (min-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1366px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1680px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+*/
